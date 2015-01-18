@@ -134,10 +134,6 @@ class AdobeFlashDmgUnpacker(Processor):
               line = re.sub(r"<payload numberOfFiles=\".*\" installKBytes=\".*\"/>", pkg_line, line.rstrip())
               print line
 
-#            pkg_path = os.path.join(cache_path, 'AdobeFlashDebugger.pkg')
-            cmd = ('su', 'vmule', '/tmp/run.sh')
-            subprocess.Popen(cmd)
-
         finally:
             shutil.rmtree(temp_path)
 
