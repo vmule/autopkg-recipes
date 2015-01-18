@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Description</key>
+  <string>Downloads the latest version of Adobe Flash Debugger</string>
+  <key>Identifier</key>
+  <string>com.github.vmule.debuggerflash.download</string>
+  <key>Input</key>
+  <dict>
+    <key>NAME</key>
+    <string>AdobeFlashDebug</string>
+  </dict>
+  <key>Process</key>
+  <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://www.adobe.com/support/flashplayer/downloads.html</string>
+                <key>re_pattern</key>
+                <string>/pub/flashplayer/updaters/.*/flashplayer_.*_plugin_debug\.dmg</string>
+                <key>re_flags</key>
+                <array>
+                    <string>IGNORECASE</string>
+                </array>
+            </dict>
+        </dict>
+    <dict>
+      <key>Processor</key>
+      <string>URLDownloader</string>
+      <key>Arguments</key>
+      <dict>
+        <key>url</key>
+        <string>http://fpdownload.macromedia.com%match%</string>
+        <key>filename</key>
+        <string>%NAME%.dmg</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>Processor</key>
+      <string>EndOfCheckPhase</string>
+    </dict>
+  </array>
+</dict>
+</plist>
+
