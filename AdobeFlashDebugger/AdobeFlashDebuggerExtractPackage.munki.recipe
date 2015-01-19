@@ -9,9 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>AdobeFlashDebugger</string>
-        <key>MUNKI_REPO</key>
-        <string>/Users/vmule/autopkg/munki</string>
+        <string>FlashDebugger</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,9 +17,9 @@
                 <string>unstable</string>
             </array>
             <key>description</key>
-            <string>Adobe® Flash® Player is a cross-platform browser-based application runtime that delivers uncompromised viewing of expressive applications, content, and videos across screens and browsers.</string>
+            <string>Adobe® Flash® Debugger.</string>
             <key>display_name</key>
-            <string>Adobe Flash Player</string>
+            <string>Adobe Flash Debugger</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -38,7 +36,7 @@
             <key>Arguments</key>
             <dict>
                 <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/Flash Plugin</string>
+                <string>%RECIPE_CACHE_DIR%/PkgRoot</string>
                 <key>pkgdirs</key>
                 <dict/>
             </dict>
@@ -90,8 +88,36 @@
             <string>AdobeFlashDmgUnpacker</string>
         </dict>
         <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_request</key>
+                <dict>
+                    <key>pkgroot</key>
+                    <string>%pkgroot%</string>
+                    <key>pkgdir</key>
+                    <string>%RECIPE_CACHE_DIR%/</string>
+                    <key>pkgname</key>
+                    <string>%NAME%</string>
+                    <key>pkgtype</key>
+                    <string>flat</string>
+                    <key>id</key>
+                    <string>com.adobe.flash.debugger</string>
+                    <key>version</key>
+                    <string>%version%</string>
+                    <key>infofile</key>
+                    <string></string>
+                    <key>chown</key>
+                    <array></array>
+                    <key>resources</key>
+                    <string></string>
+                    <key>scripts</key>
+                    <string></string>
+                </dict>
+            </dict>
             <key>Processor</key>
-            <string>DmgCreator</string>
+            <string>PkgCreator</string>
+        </dict>
+        <dict>
             <key>Arguments</key>
             <dict>
                 <key>dmg_root</key>
@@ -99,6 +125,8 @@
                 <key>dmg_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
             </dict>
+            <key>Processor</key>
+            <string>DmgCreator</string>
         </dict>
         <dict>
             <key>Arguments</key>
@@ -110,8 +138,8 @@
             <string>MunkiImporter</string>
         </dict>
         <dict>
-            <key>Processor</key>
-            <string>MunkiCatalogBuilder</string>
+        <key>Processor</key>
+        <string>MunkiCatalogBuilder</string>
         </dict>
     </array>
 </dict>
