@@ -10,8 +10,6 @@
     <dict>
         <key>NAME</key>
         <string>AdobeFlashPlayer</string>
-        <key>MUNKI_REPO</key>
-        <string>/Users/vmule/autopkg/munki</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
