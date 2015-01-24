@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads Adobe Flash Player installer, extracts the embedded package, imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.munki.FlashPlayerExtractPackage</string>
+    <string>com.github.vmule.munki.FlashPlayerExtractPackage</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
