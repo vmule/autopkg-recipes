@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version of Wireshark.</string>
     <key>Identifier</key>
-    <string>com.github.vmule.wireshark.download</string>
+    <string>com.github.vmule.download.wireshark</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
