@@ -29,7 +29,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>AdobeFlashDebbugger.download.recipe</string>
+    <string>com.github.vmule.debuggerflash.download</string>
     <key>Process</key>
     <array>
         <dict>
