@@ -5,7 +5,7 @@
   <key>Description</key>
   <string>Downloads the latest version of Adobe Flash Debugger</string>
   <key>Identifier</key>
-  <string>com.github.vmule.debuggerflash.download</string>
+  <string>com.github.vmule.download.AdobeFlashDebugger</string>
   <key>Input</key>
   <dict>
     <key>NAME</key>
