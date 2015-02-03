@@ -17,7 +17,7 @@
                 <string>unstable</string>
             </array>
             <key>description</key>
-            <string>MacVim is the text editor Vim for Mac OS X. </string>
+            <string>MacVim is the text editor Vim for Mac OS X.</string>
             <key>display_name</key>
             <string>MacVim</string>
             <key>name</key>
