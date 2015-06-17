@@ -22,8 +22,12 @@
     	    </array>
             <key>catalogs</key>
             <array>
-                <string>unstable</string>
+                <string>testing</string>
             </array>
+            <key>category</key>
+	    <string>Developer</string>
+	    <key>developer</key>
+	    <string>boot2docker</string>
             <key>description</key>
             <string>Boot2Docker is a lightweight Linux distribution made specifically to run Docker containers.</string>
             <key>display_name</key>
