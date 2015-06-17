@@ -11,9 +11,15 @@
         <key>NAME</key>
         <string>Boot2Docker</string>
         <key>MUNKI_REPO_SUBDIR</key>
-	    <string>apps/Boot2Docker</string>
+	<string>apps/Boot2Docker</string>
         <key>pkginfo</key>
         <dict>
+            <key>blocking_applications</key>
+	    <array>
+	   	<string>VirtualBox</string>
+	   	<string>boot2docker</string>
+	   	<string>docker</string>
+    	    </array>
             <key>catalogs</key>
             <array>
                 <string>unstable</string>
