@@ -50,10 +50,6 @@
             <key>Processor</key>
             <string>MunkiImporter</string>
         </dict>
-        <dict>
-            <key>Processor</key>
-            <string>MunkiCatalogBuilder</string>
-        </dict>
     </array>
 </dict>
 </plist>
