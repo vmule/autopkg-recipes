@@ -10,6 +10,8 @@
     <dict>
         <key>NAME</key>
         <string>Boot2Docker</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+	    <string>apps/Boot2Docker</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -31,22 +33,13 @@
     <key>Process</key>
     <array>
         <dict>
-            <key>Processor</key>
-            <string>DmgCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>dmg_root</key>
-                <string>%pathname%</string>
-                <key>dmg_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
-            </dict>
-        </dict>
-        <dict>
             <key>Arguments</key>
             <dict>
                 <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
-            </dict>
+                <string>%pathname%</string>		
+		<key>repo_subdirectory</key>
+		<string>%MUNKI_REPO_SUBDIR%</string>
+	    </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
         </dict>
