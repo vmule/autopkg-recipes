@@ -30,7 +30,7 @@ This pkg created with this recipe will just install:
             <key>display_name</key>
             <string>Adobe Flash Debugger</string>
             <key>name</key>
-            <string>%NAME%</string>
+            <string>AdobeFlashDebugger</string>
             <key>unattended_install</key>
             <true/>
         </dict>
