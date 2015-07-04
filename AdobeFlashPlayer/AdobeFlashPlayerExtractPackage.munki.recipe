@@ -3,7 +3,16 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads Adobe Flash Player installer, extracts the embedded package, imports into Munki.</string>
+    <string>
+- Downloads the latest Adobe Flash Player installer, 
+- extracts the embedded package inside Install Adobe Flash Player.app, 
+- delete PreferencePanes,Application Support, LaunchDaemons and PreferencePanes files from the pkg
+- wraps it in a disk image, and imports it into Munki.
+    
+This pkg created with this recipe will just install:
+    
+-  /Library/Internet\ Plug-Ins/Flash\ Player.plugin
+-  /Library/Internet\ Plug-Ins/flashplayer.xpt</string>
     <key>Identifier</key>
     <string>com.github.vmule.munki.FlashPlayerExtractPackage</string>
     <key>Input</key>
