@@ -30,7 +30,7 @@ This pkg created with this recipe will just install:
             <key>display_name</key>
             <string>Adobe Flash Player</string>
             <key>name</key>
-            <string>%NAME%</string>
+            <string>AdobeFlashPlayer</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
